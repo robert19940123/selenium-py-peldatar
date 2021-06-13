@@ -1,6 +1,6 @@
 import pytest
 
-from testproject.mymath import add_numbers
+from testproject.mymath.py import add_numbers
 
 def test_add_positive():
     assert add_numbers(1, 2) == 3
