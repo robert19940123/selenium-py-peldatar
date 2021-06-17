@@ -7,6 +7,8 @@ fuel = int(input("Benzin ára:"))
 
 print(((road_cons) * (road_km)) + ((city_cons) * (city_km)))        # Mennyit fogyaszt az autód csak oda?
 print((((road_cons) * (road_km)) + ((city_cons) * (city_km))) * 2)    # Oda-vissza
+print(((((road_cons) * (road_km)) + ((city_cons) * (city_km))) * 2) * fuel)  #Teljes út benzinköltsége
+
 
 
 
