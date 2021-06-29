@@ -11,14 +11,20 @@ element2 = driver.find_element_by_id("element2")
 element3 = driver.find_element_by_id("element3")
 element4 = driver.find_element_by_id("element4")
 element5 = driver.find_element_by_id("element5")
+result = driver.find_element_by_id("result")
+
+# ------
+
+# ids = driver.find_elements_by_xpath('//*[@id]')
+# for i_d in ids:
+#     final = i_d.get_attribute('id')
+#     print(final)
 
 # -------
 
 try:
     first = driver.find_element_by_css_selector("button")
     first.click()
-
-    result = driver.find_element_by_id("result")
 
     if (first.text + " was clicked") == result.text:
         print("Acceptable")
